@@ -3,13 +3,13 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse('Teste Django')
+    return render(request, 'index.html')
 
 def sobre(request):
-    return HttpResponse('<h1>Sistema 2.0 desenvolvido por mim mesmo, com Django</h1>')
+    return render(request, 'sobre.html')
 
 def contato(request):
-    return HttpResponse('Esta é a página de contato')
+    return render(request, 'contato.html')
 
 def ajuda(request):
-    return HttpResponse('Esta é a página de ajuda')
+    return render(request, 'ajuda.html')

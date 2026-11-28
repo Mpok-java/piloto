@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title> {% block title %} title {% endblock title %} </title>
+    </head>
+    <body>
+        <a href="{% url 'index' %}">Home</a> |
+        <a href="{% url 'sobre_o_sistema' %}">Sobre</a> |
+        <a href="{% url 'entre_em_contato' %}">Contato</a> |
+        <a href="{% url 'ajuda' %}">Ajuda</a>
+        <br>
+
+        <h1> {% block titulo_pagina %} Titulo da pagina {% endblock titulo_pagina %} </h1>
+
+    </body>
+</html>
